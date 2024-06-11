@@ -1,0 +1,41 @@
+@use './partials/variables' as *;
+
+$fa-font-path: "../fonts/webfonts" !default;
+
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+
+@import '~bootstrap/scss/bootstrap';
+
+#admin{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    #sidebar{
+        width: 250px;
+        min-width: 70px;
+        background-color: palevioletred;
+        text-wrap: pretty;
+    }
+    #wrapper{
+        background-color: pink;
+        
+        flex-grow: 1;
+        header{
+            min-height: 70px;
+            background-color: plum;
+            img{
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+}
+.img-show{
+    width: 20rem;
+    height: 20rem;
+    padding-bottom: 10px;
+}
+
